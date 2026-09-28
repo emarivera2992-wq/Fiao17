@@ -1,0 +1,51 @@
+/*Configuracion General*/
+
+body{
+    margin: 0;
+    front-family: Arial, sans-serif;
+    background-color: rgb(255, 153, 0);
+    color: yellow;
+}
+
+
+/*Encabezado*/
+header{
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1{
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+header p{
+    font-size: 18pt;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+
+/*Contendo principal*/
+
+main{
+    padding: 30px;
+}
+
+
+/*section primcipal*/
+.principal{
+    background-color: #dd710b;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
