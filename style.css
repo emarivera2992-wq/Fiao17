@@ -9,6 +9,7 @@ body{
 
 
 /*Encabezado*/
+
 header{
     background-color: red;
     color: #fff;
@@ -36,6 +37,7 @@ nav a{
 
 /*Contendo principal*/
 
+
 main{
     padding: 30px;
 }
@@ -48,4 +50,47 @@ main{
     padding: 40px;
     border-radius: 10px;
     margin-bottom: 30px;
+}
+
+.principal h2 {
+    font-size: 30px;
+}
+
+
+
+/*Boton*/
+
+button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/*Seccion targetas*/
+
+.targetas {
+    text-align: center;
+}
+
+.targetas {
+    display : inline-block;
+    width: 25px;
+    margin: 10px;
+    padding: 20px;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+
+/* Pie de pagina*/
+
+footer {
+    background-color: orange;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
 }
