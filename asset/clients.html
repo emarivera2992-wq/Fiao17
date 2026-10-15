@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Management</title>
+  <link rel="stylesheet" href="asset/css/clients.style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="dashboard">
+    <section class="intro">
+      <div class="intro-top">
+        <h1>Client Management</h1>
+        <div class="top-buttons">
+          <button class="circle-btn">🌐</button>
+          <button class="circle-btn">☾</button>
+        </div>
+      </div>
+
+      <h2>Each client, with a clear account</h2>
+      <p class="description">
+        Register your customers in seconds and see at a glance
+        who is up to date, who owes, and who to remind.
+      </p>
+
+      <div class="illustration">
+        <img src="tu-imagen.png" alt="Atención al cliente">
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="filter-panel">
+        <div class="search-box">
+          <span>⌕</span>
+          <input id="search" type="search"
+            placeholder="Search client by name or phone...">
+        </div>
+
+        <div class="filter-tabs">
+          <button class="filter-btn active">All</button>
+          <button class="filter-btn">On Time</button>
+          <button class="filter-btn">Pending</button>
+          <button class="filter-btn">Overdue</button>
+        </div>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>CLIENT</th>
+              <th>PURCHASES</th>
+              <th>PENDING DEBT</th>
+              <th>STATUS</th>
+              <th>ACTIONS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="client-info">
+                <div class="avatar">RB</div>
+                <div><strong>Ramón Batista</strong><span>6123-4567</span></div>
+              </div></td>
+              <td>14 purchases</td>
+              <td><strong>B/. 35.00</strong></td>
+              <td><span class="status pending">Pending</span></td>
+              <td><a href="#ramon">View detail →</a></td>
+            </tr>
+            <tr>
+              <td><div class="client-info">
+                <div class="avatar">YP</div>
+                <div><strong>Yolanda Pérez</strong><span>6234-8890</span></div>
+              </div></td>
+              <td>22 purchases</td>
+              <td><strong>–</strong></td>
+              <td><span class="status ontime">On Time</span></td>
+              <td><a href="#yolanda">View detail →</a></td>
+            </tr>
+            <tr>
+              <td><div class="client-info">
+                <div class="avatar">CR</div>
+                <div><strong>Carlos Ruiz</strong><span>6301-2245</span></div>
+              </div></td>
+              <td>9 purchases</td>
+              <td><strong>B/. 62.50</strong></td>
+              <td><span class="status overdue">Overdue</span></td>
+              <td><a href="#carlos">View detail →</a></td>
+            </tr>
+            <tr>
+              <td><div class="client-info">
+                <div class="avatar">MS</div>
+                <div><strong>Mireya Santos</strong><span>6415-7783</span></div>
+              </div></td>
+              <td>31 purchases</td>
+              <td><strong>B/. 12.00</strong></td>
+              <td><span class="status pending">Pending</span></td>
+              <td><a href="#mireya">View detail →</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="reminder">
+        <div>
+          <strong>◉ Automatic Reminder Sent</strong>
+          <p>WhatsApp to Ramón Batista: "Hello Ramón, you have B/. 35.00 pending in Mini súper Doña Chela. See you soon!"</p>
+        </div>
+        <button class="send-btn">Send</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
