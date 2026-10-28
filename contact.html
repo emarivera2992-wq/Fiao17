@@ -1,296 +1,177 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FIA'O - Contact and Support</title>
- 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
- 
+    <title>Contact and Support</title>
     <link rel="stylesheet" href="asset/css/contact.css">
- 
-    <script src="asset/Js/contact.js" defer></script>
 </head>
- 
 <body>
- 
-    <!-- NAVIGATION BAR -->
-    <header class="header-wrapper">
-        <nav class="navbar">
- 
-            <a class="navbar-brand" href="Index.html">
-                <img src="asset/img/LOgO (1).png" alt="FIA'O Logo" class="navbar-logo">
-            </a>
- 
-            <ul class="navbar-menu">
-                <li><a href="Index.html" class="nav-link">Home</a></li>
-                <li><a href="credit.html" class="nav-link">Credit</a></li>
-                <li><a href="products.html" class="nav-link">Products</a></li>
-                <li><a href="clients.html" class="nav-link">Clients</a></li>
-                <li><a href="reports.html" class="nav-link">Reports</a></li>
-                <li><a href="contact.htm" class="nav-link active">Contact</a></li>
-            </ul>
- 
-            <div class="navbar-actions">
- 
-                <button class="icon-btn"
-                        id="notifications-btn"
-                        type="button"
-                        aria-label="Notifications"
-                        title="Notifications">
-                    <i class="fa-regular fa-bell"></i>
-                    <span class="notification-badge">2</span>
-                </button>
- 
-                <button class="icon-btn"
-                        id="theme-toggle"
-                        type="button"
-                        aria-label="Activate night mode"
-                        title="Activate night mode">
-                    <i id="theme-icon" class="fa-regular fa-moon"></i>
-                </button>
- 
-                <a href="User.html"
-                   class="user-avatar-btn"
-                   aria-label="User profile"
-                   title="User profile">
-                    <i class="fa-regular fa-circle-user"></i>
-                </a>
- 
-            </div>
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="navbar">
+        <div class="logo">FIA<span class="yellow-text">´O</span></div>
+        <nav class="nav-links">
+            <a href="Index.html" class="active">Home</a>
+            <a href="credit.html">Credit</a>
+            <a href="products.html">Products</a>
+            <a href="clients.html">Clients</a>
+            <a href="reports.html">Reports</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
- 
-    <!-- MAIN CONTENT -->
-    <main class="contact-main-container">
- 
-        <section class="contact-header">
-            <h1 class="contact-title">
-                <span class="title-icon">
-                    <i class="fa-solid fa-address-book"></i>
-                </span>
-                Contact and support
-            </h1>
- 
-            <p class="contact-subtitle">
-                Have questions? We are here to help.
-                <br>
-                Check out the FAQs below or open the chat anytime for instant support.
-            </p>
-        </section>
- 
-        <section class="contact-grid">
- 
-            <!-- FAQ -->
-            <div class="faq-section">
- 
-                <article class="faq-item">
-                    <button class="faq-question" type="button" aria-expanded="false">
-                        <span>Does it work without internet?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>
-                            FIA'O requires an internet connection for features that
-                            need online access and data synchronization.
-                        </p>
-                    </div>
-                </article>
- 
-                <article class="faq-item">
-                    <button class="faq-question" type="button" aria-expanded="false">
-                        <span>How to start using the app?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>
-                            Open the application and navigate through the Home,
-                            Products, Clients, Credit and Reports sections to manage
-                            your business information.
-                        </p>
-                    </div>
-                </article>
- 
-                <article class="faq-item">
-                    <button class="faq-question" type="button" aria-expanded="false">
-                        <span>Do payment reminders arrive automatically?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>
-                            Reminder availability depends on the notification features
-                            configured for your application.
-                        </p>
-                    </div>
-                </article>
- 
-                <article class="faq-item">
-                    <button class="faq-question" type="button" aria-expanded="false">
-                        <span>Can I export my reports?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>
-                            Open Reports and use the available export options to
-                            download your report.
-                        </p>
-                    </div>
-                </article>
- 
-                <article class="faq-item">
-                    <button class="faq-question" type="button" aria-expanded="false">
-                        <span>What if a customer doesn't pay?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>
-                            Review the customer's outstanding balance in the Credit
-                            or Reports section and follow up with the customer.
-                        </p>
-                    </div>
-                </article>
- 
-            </div>
- 
-            <!-- CONTACT FORM -->
-            <section class="contact-form-card">
- 
-                <form id="contact-form">
- 
-                    <div class="form-group">
-                        <label for="contact-name">NAME</label>
-                        <input type="text"
-                               id="contact-name"
-                               name="name"
-                               placeholder="Your name"
-                               autocomplete="name"
-                               required>
-                    </div>
- 
-                    <div class="form-group">
-                        <label for="contact-email">EMAIL</label>
-                        <input type="email"
-                               id="contact-email"
-                               name="email"
-                               placeholder="yourcorreo@example.com"
-                               autocomplete="email"
-                               required>
-                    </div>
- 
-                    <div class="form-group">
-                        <label for="contact-message">MESSAGE</label>
-                        <textarea id="contact-message"
-                                  name="message"
-                                  rows="5"
-                                  placeholder="Tell us how we can help you"
-                                  required></textarea>
-                    </div>
- 
-                    <button type="submit" class="btn-send-message">
-                        Send message
-                    </button>
- 
-                    <p id="contact-feedback" class="contact-feedback" role="status"></p>
- 
-                </form>
-            </section>
- 
-        </section>
-    </main>
- 
-    <!-- CHAT WIDGET -->
-    <div class="chat-widget-wrapper">
- 
-        <section class="chat-window" id="chat-window" aria-label="Support chat">
- 
-            <div class="chat-header">
-                <div>
-                    <i class="fa-solid fa-robot"></i>
-                    <span>FIA'O Support</span>
-                </div>
- 
-                <button type="button"
-                        class="chat-close-btn"
-                        id="chat-close-btn"
-                        aria-label="Close chat">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
- 
-            <div class="chat-body" id="chat-body" aria-live="polite">
-                <div class="chat-message bot-message">
-                    Hello! How can we help you today?
-                </div>
-            </div>
- 
-            <form class="chat-footer" id="chat-form">
-                <input type="text"
-                       id="chat-input"
-                       placeholder="Write a message..."
-                       aria-label="Write a message"
-                       autocomplete="off"
-                       required>
- 
-                <button type="submit" aria-label="Send message">
-                    <i class="fa-solid fa-paper-plane"></i>
-                </button>
-            </form>
- 
-        </section>
- 
-        <button class="chat-trigger-btn"
-                id="chat-trigger-btn"
-                type="button"
-                aria-label="Open support chat">
-            <i class="fa-regular fa-comment-dots"></i>
-        </button>
- 
-    </div>
- 
-    <!-- FOOTER -->
-    <footer class="footer-wrapper">
-        <div class="footer-container">
- 
-            <div class="footer-brand-section">
-                <a href="Index.html">
-                    <img src="asset/img/LOgO (1).png"
-                         alt="FIA'O Logo"
-                         class="footer-logo">
-                </a>
- 
-                <p class="footer-desc">
-                    FIA'O helps you organize your business information and manage
-                    your daily operations.
+
+    <header class="page-header">
+        <div class="heading">
+            <div class="heading-icon" aria-hidden="true">✉</div>
+            <div>
+                <h1>Contact and Support</h1>
+                <p>
+                    Have questions? We are here to help<br>
+                    Check out the FAQs below or open the chat anytime for instant support.
                 </p>
             </div>
- 
-            <div class="footer-column">
-                <h3 class="footer-heading">QUICK LINKS</h3>
-                <ul class="footer-links">
-                    <li><a href="Index.html">Home</a></li>
-                    <li><a href="Credit.html">Credit</a></li>
-                    <li><a href="Products.html">Products</a></li>
-                    <li><a href="Clients.html">Clients</a></li>
-                    <li><a href="Reports.html">Reports</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
-            </div>
- 
-            <div class="footer-column">
-                <h3 class="footer-heading">SUPPORT</h3>
-                <ul class="footer-links">
-                    <li><a href="contact.html">Help Center</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
- 
         </div>
- 
-        <div class="footer-bottom-bar">
-            <p>&copy; 2026 FIA'O. All rights reserved.</p>
+
+        <div class="header-actions">
+            <details class="language-menu">
+                <summary aria-label="Choose language">文</summary>
+                <div class="language-options">
+                    <a href="#home">English</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </details>
+
+            <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+            <label for="theme-toggle" class="theme-button" aria-label="Toggle dark mode">
+                ☾
+            </label>
         </div>
+    </header>
+
+    <main class="support-layout" id="home">
+
+        <section class="faq-section" aria-label="Frequently asked questions">
+
+            <details class="faq-item" open>
+                <summary>
+                    <span>Does it work without internet?</span>
+                    <span class="faq-icon" aria-hidden="true"></span>
+                </summary>
+                <div class="faq-answer">
+                    Yes, you can record offline actions and they will sync
+                    automatically once you are connected again.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>How to start using the app?</span>
+                    <span class="faq-icon" aria-hidden="true"></span>
+                </summary>
+                <div class="faq-answer">
+                    Create your account, complete your profile, and follow
+                    the instructions on your dashboard to get started.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>Do payment reminders arrive automatically?</span>
+                    <span class="faq-icon" aria-hidden="true"></span>
+                </summary>
+                <div class="faq-answer">
+                    Yes, you can configure payment reminders in your settings
+                    to help you keep track of upcoming payments.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>Can I export my reports?</span>
+                    <span class="faq-icon" aria-hidden="true"></span>
+                </summary>
+                <div class="faq-answer">
+                    You can download your reports in supported formats
+                    from the reports section of the app.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>What if a customer doesn't pay?</span>
+                    <span class="faq-icon" aria-hidden="true"></span>
+                </summary>
+                <div class="faq-answer">
+                    Review the payment status, contact your customer,
+                    and send a reminder when appropriate.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>How can I contact support?</span>
+                    <span class="faq-icon" aria-hidden="true"></span>
+                </summary>
+                <div class="faq-answer">
+                    Fill out the contact form and include as much detail
+                    as possible so the support team can assist you.
+                </div>
+            </details>
+
+        </section>
+
+        <section class="contact-section" id="contact">
+            <form class="contact-form" action="#contact" method="get">
+
+                <div class="form-group">
+                    <label for="name">NAME</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Your name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="yourcorreo@example.com"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="message">MESSAGE</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Tell us how we can help you"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">
+                    Send Message
+                </button>
+
+                <p class="form-note">
+                    Please complete all fields before submitting.
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="page-footer">
+        <p>Contact and Support &copy; 2026. All rights reserved.</p>
     </footer>
- 
+
 </body>
 </html>

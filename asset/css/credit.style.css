@@ -12,6 +12,21 @@
   --green: #16b85a;
 }
 
+/* =========================================
+   BARRA DE NAVEGACIÓN
+   ========================================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c93b38;
+    padding: 15px 40px;
+    margin: 25px 40px;
+    border-radius: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
 * {
   box-sizing: border-box;
 }
