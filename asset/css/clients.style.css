@@ -8,6 +8,48 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* =========================================
+   BARRA DE NAVEGACIÓN
+   ========================================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c93b38;
+    padding: 15px 40px;
+    margin: 25px 40px;
+    border-radius: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    background-color: #f4c430;
+    color: #000000;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   color: var(--text);
