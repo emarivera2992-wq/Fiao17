@@ -501,71 +501,81 @@ body {
 
 .login-button {
     width: 100%;
-
     height: 54px;
 
     border: none;
-
     border-radius: 9px;
 
     background: #bb2226;
-
     color: #ffffff;
 
     font-family: "Poppins", sans-serif;
-
     font-size: 16px;
-
     font-weight: 600;
 
     cursor: pointer;
-
     transition: 0.2s ease;
 
     margin-top: 10px;
-
     margin-bottom: 28px;
+
+    /* Para que funcione como enlace */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
-
-.login-button:hover {
-    background: #a91e22;
-
-    transform: translateY(-1px);
-}
-
-
-.login-button:active {
-    transform: translateY(0);
-}
-
-
-/* =========================================
-   CAPTCHA
-========================================= */
+/* CAPTCHA */
 
 .captcha {
     width: 100%;
-
     min-height: 83px;
 
     border: 1px solid #d5d5d5;
-
     border-radius: 4px;
 
     display: flex;
-
     align-items: center;
 
     padding: 14px 18px;
-
     gap: 13px;
-
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 
     margin-bottom: 17px;
 }
 
+.captcha input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+
+    cursor: pointer;
+
+    accent-color: #bb2226;
+}
+
+.captcha label {
+    font-size: 15px;
+    color: #202020;
+    flex: 1;
+    cursor: pointer;
+}
+
+.captcha-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+.captcha-logo i {
+    color: #2775e7;
+    font-size: 26px;
+}
+
+.captcha-logo small {
+    font-size: 8px;
+    color: #555;
+}
 
 /* Checkbox */
 
@@ -817,6 +827,196 @@ body {
 
     .captcha > span {
         font-size: 13px;
+    }
+
+    
+
+}
+
+/* =========================
+   RESET PASSWORD MODAL
+========================= */
+
+.reset-overlay {
+    position: fixed;
+    inset: 0;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 9999;
+
+    padding: 20px;
+}
+
+.reset-overlay.active {
+    display: flex;
+}
+
+
+/* MODAL CARD */
+
+.reset-card {
+    background: #ffffff;
+
+    width: 420px;
+    max-width: 100%;
+
+    padding: 25px 22px;
+
+    border-radius: 15px;
+
+    border: 1px solid #d5d5d5;
+    border-left: 7px solid #bb2226;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+    font-family: "Poppins", sans-serif;
+
+    animation: modalAppear 0.25s ease;
+}
+
+
+/* TITLE */
+
+.reset-card h3 {
+    font-size: 21px;
+    font-weight: 600;
+
+    margin: 0 0 12px;
+
+    color: #111111;
+}
+
+
+/* DESCRIPTION */
+
+.reset-card p {
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: #444444;
+
+    margin-bottom: 14px;
+}
+
+
+/* EMAIL INPUT */
+
+.reset-card input {
+    width: 100%;
+
+    height: 55px;
+
+    padding: 14px;
+
+    border: 1px solid #d2d2d2;
+    border-radius: 10px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+
+    outline: none;
+
+    box-sizing: border-box;
+}
+
+.reset-card input:focus {
+    border-color: #bb2226;
+
+    box-shadow: 0 0 0 2px rgba(187, 34, 38, 0.08);
+}
+
+
+/* BUTTONS */
+
+.reset-buttons {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.reset-buttons button {
+    border: none;
+
+    padding: 10px 19px;
+
+    border-radius: 8px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+/* CANCEL */
+
+#cancelReset {
+    background: #dedede;
+    color: #222222;
+}
+
+#cancelReset:hover {
+    background: #cccccc;
+}
+
+
+/* SEND */
+
+.reset-buttons button[type="submit"] {
+    background: #bb2226;
+    color: #ffffff;
+}
+
+.reset-buttons button[type="submit"]:hover {
+    background: #a3191e;
+}
+
+
+/* ANIMATION */
+
+@keyframes modalAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+
+    .reset-card {
+        padding: 22px 18px;
+    }
+
+    .reset-card h3 {
+        font-size: 19px;
+    }
+
+    .reset-card p {
+        font-size: 14px;
+    }
+
+    .reset-card input {
+        font-size: 14px;
     }
 
 }
